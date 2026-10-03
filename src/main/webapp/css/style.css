@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f3ff;
+    color: #292343;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.box {
+    width: 90%;
+    max-width: 500px;
+    margin: 60px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px #ddd;
+}
+
+h1 {
+    color: #6542ed;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+
+/* LOGIN */
+
+.login-box {
+    text-align: center;
+}
+
+.login-box input {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.login-box input:focus {
+    outline: none;
+    border-color: #6542ed;
+}
+
+
+/* BUTTONS */
+
+button,
+a {
+    display: inline-block;
+    background: #6542ed;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover,
+a:hover {
+    background: #5031d0;
+}
+
+
+/* WELCOME */
+
+.welcome {
+    color: #6542ed;
+}
+
+
+/* COURSES */
+
+.course-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    background: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #ddd;
+}
+
+.course-card h2 {
+    color: #6542ed;
+    margin-bottom: 10px;
+}
+
+
+/* QUIZ */
+
+.quiz-box {
+    max-width: 800px;
+}
+
+.question {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f7f5ff;
+    border-radius: 10px;
+}
+
+.question h3 {
+    margin-bottom: 15px;
+}
+
+.question label {
+    display: block;
+    padding: 12px;
+    margin: 8px 0;
+    background: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.question label:hover {
+    background: #eae5ff;
+}
+
+
+/* RESULT */
+
+.result-box {
+    text-align: center;
+}
+
+.score {
+    font-size: 55px;
+    font-weight: bold;
+    color: #6542ed;
+    margin: 25px;
+}
+
+
+/* ANSWERS */
+
+.answer {
+    background: white;
+    padding: 20px;
+    margin: 18px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #ddd;
+}
+
+.answer h3 {
+    margin-bottom: 15px;
+}
+
+
+/* MESSAGES */
+
+.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .course-container {
+        flex-direction: column;
+    }
+
+    .course-card {
+        width: 100%;
+    }
+
+    .box {
+        padding: 25px;
+    }
+}
